@@ -19,7 +19,8 @@ function insertFeatures(app, obj) {
     var postContainer = document.createElement("div");
     var postDiv = document.createElement("div");
     var postTag = document.createElement("p");
-    var urlTag = document.createElement("p");
+    var urlLink = document.createElement("a");
+    var urlTag = document.createElement("div");
     var postContent = document.createTextNode(item.content);
     var urlContent = document.createTextNode(item.url);
     var copyButton = document.createElement("button");
@@ -33,8 +34,10 @@ function insertFeatures(app, obj) {
     postDiv.setAttribute("class", "item");
     postTag.setAttribute("class", "item-text");
     urlTag.setAttribute("class", "item-url");
+    urlLink.setAttribute("href", item.url);
+    urlTag.appendChild(urlLink);
     postTag.appendChild(postContent);
-    urlTag.appendChild(urlContent);
+    urlLink.appendChild(urlContent);
     copyButton.appendChild(copyText);
     copyButton.setAttribute("class", "btn-primary copy-button");
     copyButton.setAttribute("onclick", "copyData(this)");
