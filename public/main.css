@@ -31,7 +31,7 @@ body {
   -moz-box-shadow: 0px 2px 36px 1px rgba(209,209,209,1);
   box-shadow: 0px 2px 36px 1px rgba(209,209,209,1);
 }
-.item-container, .item-url, .item-text {
+.item-container, .item-url, .item-text, .indicator-container {
   padding: 10px;
 }
 
@@ -51,6 +51,11 @@ body {
 .navbar-item a {
   color: #333333;
   text-decoration: none;
+}
+.indicator {
+  height: 10px;
+  background: yellow;
+  width: 50px;
 }
 
  .btn-primary {

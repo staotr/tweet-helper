@@ -25,8 +25,14 @@ function insertFeatures(app, obj) {
     var urlContent = document.createTextNode(item.url);
     var copyButton = document.createElement("button");
     var copyText = document.createTextNode("Copy");
+    var indicatorContainer = document.createElement("div");
+    var indicator = document.createElement("div");
 
     // insert data into elements
+    indicatorContainer.setAttribute("class","indicator-container");
+    indicator.setAttribute("class","indicator");
+    indicatorContainer.appendChild(indicator);
+    postDiv.appendChild(indicatorContainer);
     postContainer.setAttribute("id", item._id);
     postContainer.setAttribute("data-content", item.content);
     postContainer.setAttribute("class", "item-container");
@@ -48,7 +54,16 @@ function insertFeatures(app, obj) {
     postContainer.appendChild(postDiv);
     // insert into dom
 
-    // filter posts and append to correct section
+    // filter posts and color correct
+    if (item.site == "medium") {
+      indicator.style.background = "#1AA77D";
+    }
+    else if (item.site == "playbook") {
+      indicator.style.background = "#222222";
+    }
+    else {
+      indicator.style.background = "#931C20";
+    }
     app.appendChild(postContainer);
   });
 }
