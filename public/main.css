@@ -1,0 +1,71 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Montserrat', sans-serif;
+  font-family: 'PT Sans', sans-serif;
+}
+#app, #action-section {
+  display: grid;
+}
+#app {
+  grid-template-columns: 15% 80%;
+}
+#action-section {
+  grid-template-columns: 33% 33% 33%;
+  grid-column-start: 2;
+  padding-left: 5%;
+  overflow-y: scroll;
+}
+#navigation {
+  height: 100vh;
+  background: #f3f3f3;
+  grid-template-columns: 50% 50%;
+}
+#navigation, #action-section {
+  height: 100vh;
+}
+.item {
+  overflow-wrap: break-word;
+  border-radius: 6px;
+  -webkit-box-shadow: 0px 2px 36px 1px rgba(209,209,209,1);
+  -moz-box-shadow: 0px 2px 36px 1px rgba(209,209,209,1);
+  box-shadow: 0px 2px 36px 1px rgba(209,209,209,1);
+}
+.item-container {
+  padding: 10px;
+}
+
+.item-text {
+  margin: 0 0 10px 0;
+  padding: 10px;
+}
+
+.item-url {
+  margin: 0;
+  padding: 0px 10px;
+}
+.navbar-item {
+  padding: 10px;
+}
+.navbar-item:hover {
+  background: #ececec;
+}
+.navbar-item a {
+  color: #333333;
+  text-decoration: none;
+}
+
+ .btn-primary {
+  width: 100%;
+  border: none;
+  padding: 0px;
+  padding: 10px;
+  color: #fff;
+  background: #FF512F;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to bottom, #DD2476, #FF512F);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to bottom, #DD2476, #FF512F); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.copy-button {
+  border-radius: 0 0 6px 6px;
+}
