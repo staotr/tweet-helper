@@ -72,3 +72,44 @@ body {
 .copy-button {
   border-radius: 0 0 6px 6px;
 }
+.copy-button:focus {
+  outline: none;
+}
+.compose-section {
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+  position: absolute;
+  z-index: 10;
+  background: rgba(34,34,34,0.6);
+  top: 0;
+  left: 0;
+}
+.form-container {
+  background: #fff;
+  padding: 10px;
+  border-radius: 6px;
+}
+.form-text-area {
+  margin-bottom: 10px;
+}
+.form-text-area:focus {
+  outline:none;
+}
+.form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+
+
+.flex {
+  display: flex;
+}
+
+.hide {
+  display: none;
+}

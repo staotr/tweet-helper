@@ -33,10 +33,10 @@ function insertFeatures(app, obj) {
     indicator.setAttribute("class","indicator");
     indicatorContainer.appendChild(indicator);
     postDiv.appendChild(indicatorContainer);
-    postContainer.setAttribute("id", item._id);
-    postContainer.setAttribute("data-content", item.content);
+    postDiv.setAttribute("id", item._id);
+    postDiv.setAttribute("data-content", item.content);
     postContainer.setAttribute("class", "item-container");
-    postContainer.setAttribute("data-url", item.url);
+    postDiv.setAttribute("data-url", item.url);
     postDiv.setAttribute("class", "item");
     postTag.setAttribute("class", "item-text");
     urlTag.setAttribute("class", "item-url");
