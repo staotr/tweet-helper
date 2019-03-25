@@ -149,8 +149,13 @@ window.onload = function() {
   // Create event listeners for compose lightbox
   var composeWindow = document.getElementById("compose");
   var composeLink = document.getElementById("compose-enter");
-  composeLink.addEventListener("click", function() {
-      toggleHideClass(composeWindow);
-      toggleFlexClass(composeWindow);
+  var composePad = document.getElementById("compose-exit-pad");
+  var modalElements = [composePad, composeLink];
+  modalElements.forEach(function (el) {
+    el.addEventListener("click", function() {
+        toggleHideClass(composeWindow);
+        toggleFlexClass(composeWindow);
+    });
   });
+
 }
