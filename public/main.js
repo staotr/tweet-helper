@@ -1,4 +1,28 @@
 /*
+  Checks for elements in list
+*/
+
+function toggleFlexClass(el) {
+  // check for hide in class list
+  if (el.classList.contains("flex")) {
+    el.classList.remove("flex");
+    return
+  }
+  el.classList.add("flex");
+}
+
+function toggleHideClass(el) {
+  // check for hide in class list
+  if (el.classList.contains("hide")) {
+    el.classList.remove("hide");
+    return
+  }
+  el.classList.add("hide");
+}
+
+
+
+/*
   Grabs text from parent div.
 */
 function copyData(btn) {
@@ -96,4 +120,12 @@ function loadData() {
 
 window.onload = function() {
   loadData();
+
+  // Create event listeners for compose lightbox
+  var composeWindow = document.getElementById("compose");
+  var composeLink = document.getElementById("compose-enter");
+  composeLink.addEventListener("click", function() {
+      toggleHideClass(composeWindow);
+      toggleFlexClass(composeWindow);
+  });
 }

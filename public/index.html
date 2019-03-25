@@ -3,7 +3,7 @@
   <head>
     <link href="./main.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Montserrat|PT+Sans" rel="stylesheet">
-    <script src="./loader.js"></script>
+    <script src="./main.js"></script>
   </head>
   <body>
     <div id="app">
@@ -11,17 +11,17 @@
         <!-- Navigation Bar and Items -->
         <div class="navigation-side-bar">
           <div class="navbar-item"><a href="#">Tweets</a></div>
-          <div class="navbar-item"><a href="#">Compose</a></div>
+          <div class="navbar-item"><a id="compose-enter" href="#">Compose</a></div>
         </div>
       </div>
       <!-- Section handles all dynamic data -->
       <div id="action-section"></div>
       <div id="compose" class="compose-section hide">
-
+        <a class="compose-exit" href="">X</a>
         <div class="form-container">
           <h2>Compose and Save your Tweet!</h2>
           <form class="form" action="index.html" method="post">
-            <textarea class="form-text-area" name="name" rows="8" cols="80"></textarea>
+            <textarea class="form-text-area" name="name" rows="8" placeholder="Compose your tweet and save to the library!" cols="80"></textarea>
             <button class="btn-primary" type="button" name="button">Submit</button>
           </form>
         </div>
