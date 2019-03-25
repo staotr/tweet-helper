@@ -21,8 +21,14 @@
         <div class="form-container">
           <h2>Compose and Save your Tweet!</h2>
           <form class="form" action="index.html" method="post">
-            <textarea class="form-text-area" name="name" rows="8" placeholder="Compose your tweet and save to the library!" cols="80"></textarea>
-            <button class="btn-primary" type="button" name="button">Submit</button>
+            <textarea id="form-text-area" class="form-text-area" name="name" rows="8" placeholder="Compose your tweet and save to the library!" cols="80"></textarea>
+            <input id="url" class="marg-bottom-10 w-100" name="url" type="text" placeholder="url*"/>
+            <select id="site-selection" class="marg-bottom-10 flex-start">
+              <option value="playbook">Playbook</option>
+              <option value="medium">Medium</option>
+              <option value="articles">Articles</option>
+            </select>
+            <button id="save" class="btn-primary" type="button" name="button">Save</button>
           </form>
         </div>
 

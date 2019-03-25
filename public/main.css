@@ -4,6 +4,12 @@ body {
   font-family: 'Montserrat', sans-serif;
   font-family: 'PT Sans', sans-serif;
 }
+input:focus {
+  outline: none;
+}
+body, input {
+  box-sizing:border-box;
+}
 #app, #action-section {
   display: grid;
 }
@@ -116,7 +122,15 @@ body {
 .flex {
   display: flex;
 }
-
+.flex-start {
+  align-self: flex-start;
+}
+.w-100 {
+  width: 100%;
+}
 .hide {
   display: none;
+}
+.marg-bottom-10 {
+  margin-bottom: 10px;
 }

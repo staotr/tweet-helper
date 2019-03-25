@@ -92,6 +92,31 @@ function insertFeatures(app, obj) {
   });
 }
 
+/*****************************************************
+******************************************************
+DATABASE INTERACTIONS
+******************************************************
+*****************************************************/
+
+function insertTweet() {
+  const http = new XMLHttpRequest()
+  const method = "POST"
+  const url = "/post"
+
+  // get tweet information
+
+  http.open(method, url, true);
+
+  // set json header
+  xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+
+  http.onreadystatechange = function() {
+
+  }
+
+  http.send();
+}
+
 /*
 Loads data and commences action of inserting divs upon successful load
 */
